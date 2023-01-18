@@ -11,7 +11,31 @@
 <body>
     <h1 class="text-bg-dark text-white  pt-5 pb-5 text-center m-3">I am exploring Bootstrap</h1>
 
-    <div class="btn-area text-center">
+    <!-- carousel area -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner p-4">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="images/sea.jpg" class="d-block w-100 img-thumbnail" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/mountain.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/penguine.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- button area -->
+    <div class="btn-area p-3 text-center">
         <button class="btn btn-primary">Bootstrap</button>
         <button class="btn btn-secondary">Bootstrap</button>
         <button class="btn btn-danger">Bootstrap</button>
@@ -24,45 +48,50 @@
         <button class="btn btn-close"></button>
     </div>
 
-    <div class="border-area  mt-3">
-        <div class="border border-primary"></div>
-        <div class="border border-primary-subtle"></div>
-        <div class="border border-secondary"></div>
-        <div class="border border-secondary-subtle"></div>
-        <div class="border border-success"></div>
-        <div class="border border-success-subtle"></div>
-        <div class="border border-danger"></div>
-        <div class="border border-danger-subtle"></div>
-        <div class="border border-warning"></div>
-        <div class="border border-warning-subtle"></div>
-        <div class="border border-info"></div>
-        <div class="border border-info-subtle"></div>
-        <div class="border border-light"></div>
-        <div class="border border-light-subtle"></div>
-        <div class="border border-dark"></div>
-        <div class="border border-dark-subtle"></div>
-        <div class="border border-white"></div>
+    <div class="border-area p-3 d-flex justify-content-around  mt-3">
+        <div class="bdr border border-primary"></div>
+        <div class="bdr border border-primary-subtle"></div>
+        <div class="bdr border border-secondary"></div>
+        <div class="bdr border border-secondary-subtle"></div>
+        <div class="bdr border border-success"></div>
+        <div class="bdr border border-success-subtle"></div>
+        <div class="bdr border border-danger"></div>
+        <div class="bdr border border-danger-subtle"></div>
+        <div class="bdr border border-warning"></div>
+        <div class="bdr border border-warning-subtle"></div>
+        <div class="bdr border border-info"></div>
+        <div class="bdr border border-info-subtle"></div>
+        <div class="bdr border border-light"></div>
+        <div class="bdr border border-light-subtle"></div>
+        <div class="bdr border border-dark"></div>
+        <div class="bdr border border-dark-subtle"></div>
+        <div class="bdr border border-white"></div>
     </div>
 
-    <div class="border-area d-flex justify-content-around mt-3">
-        <div class="border border-1"></div>
-        <div class="border border-2"></div>
-        <div class="border border-3"></div>
-        <div class="border border-4"></div>
-        <div class="border border-5"></div>
+    <div class="border-area p-3 d-flex justify-content-around mt-3">
+        <div class="bdr border border-1 "></div>
+        <div class="bdr border border-2 "></div>
+        <div class="bdr border border-3 "></div>
+        <div class="bdr border border-4 "></div>
+        <div class="bdr border border-5 "></div>
     </div>
 
-    <div class="mb-4">
-        <label for="example" class="form-lable">Email address</label>
-        <input type="email" placeholder="name@example.com" class="form-control border-success">
+    <div class="m-5">
+        <div class="mb-3">
+            <label for="example" class="form-lable">Email address</label>
+            <input type="email" placeholder="name@example.com" class="form-control border-success">
+        </div>
+    
+        <div class="h2 mb-4 pb-2 p-4 text-danger border-bottom border-danger">
+            Danger Heading
+        </div>
+    
+        <div class="p-3 m-2 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+            changing border color and width
+        </div>
     </div>
 
-    <div class="h2 mb-4 pb-2 text-danger border-bottom border-danger">
-        Danger Heading
-    </div>
-
-    <div class="p-3 m-2 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
-        changing border color and width
-    </div>
+    <!-- js file bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
