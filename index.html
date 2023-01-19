@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+  <!-- nav area start -->
   <nav class="navbar bg-primary  navbar-expand-lg" data-bs-theme="">
     <div class="container-fluid">
       <a class="navbar-brand text-light" href="#">Navbar</a>
@@ -34,6 +35,48 @@
       </div>
     </div>
   </nav>
+
+  <!-- carusale area -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner ">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="images/mountain.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-light">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="images/food.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-light">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/sea.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-light">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- card area start -->
 
     <div class="container row justify-content-center g-5 m-auto row-cols-1 row-cols-md-3 g-4">
       <div class="cal-12">
@@ -129,24 +172,6 @@
       <div class="cal-12">
         <div class="card">
           <div class="card-img">
-            <img class="img-fluid" src="images/penguine.png" alt="">
-          </div>
-          <div class="profile-img position-relative">
-            <img class="rounded-circle " src="images/humaion.png" alt="">
-          </div>
-          <div class="card-body position-relative">
-            <h5 class="card-title text-center">Humaion Kobir</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer text-center">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-
-      <div class="cal-12">
-        <div class="card">
-          <div class="card-img">
             <img class="img-fluid" src="images/mountain.jpg" alt="">
           </div>
           <div class="profile-img position-relative">
@@ -229,28 +254,7 @@
 
 
     
-    <!-- carousel area -->
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner p-4">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="images/sea.jpg" class="d-block w-100 img-thumbnail" alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="images/mountain.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="images/penguine.png" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+ 
 
     <!-- js file bootstrap -->
     <script src="js/bootstrap.bundle.js"></script>
